@@ -1,0 +1,44 @@
+{
+  "name": "flowing",
+  "version": "1.0.0",
+  "description": "a personal site/blog",
+  "main": "index.html",
+  "scripts": {
+    "test": "test",
+    "build": "gulp",
+    "watch": "gulp watch",
+    "javascript": "gulp js",
+    "img": "gulp img",
+    "sass": "gulp css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipegs07/personal-site.git"
+  },
+  "keywords": [
+    "jekyll",
+    "javascript.",
+    "theme"
+  ],
+  "author": "Felipe Gustavo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipegs07/personal-site/issues"
+  },
+  "homepage": "https://github.com/felipegs07/personal-site#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "node-sass": "^4.11.0"
+  }
+}

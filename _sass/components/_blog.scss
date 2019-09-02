@@ -1,0 +1,45 @@
+.blog-card {
+    width: 100%;
+    border-left: .5rem solid $tertiary-color;
+    border-radius: 2px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+
+    &__title {
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    & > p {
+        font-size: 1.4rem;
+        height: 3.8em;
+        overflow: hidden;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+
+        @include responsive(tab-land){
+            -webkit-line-clamp: 3;
+            height: 3.6em;
+        }
+
+        @include responsive(phone){
+            -webkit-line-clamp: 6;
+            height: 7.5em;
+        }
+    }
+
+    &__categories {
+        display: block;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    &__category {
+        font-size: 1.2rem;
+        font-weight: 700;
+        display: inline;
+        margin-right: .5rem;
+    }
+}

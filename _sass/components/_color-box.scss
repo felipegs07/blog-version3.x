@@ -1,0 +1,47 @@
+.color-box {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &--opening {
+        width: 100%;
+        animation-name: color-box-fadein;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out; 
+    }
+
+    &--full {
+        animation-name: color-box-fadeout;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out; 
+    }
+
+    &--page {
+        width: 100%;
+        animation: color-box-page 1s ease-in-out .5s forwards;
+
+        @include responsive(phone){
+            animation: color-box-page-mobile .5s ease-in-out 0.5s forwards;
+        }
+    }
+
+    &--mobile {
+        @include responsive(phone){
+            animation: color-box-mobile .4s ease-in-out forwards
+        }
+    }
+
+    &--home-mobile {
+        @include responsive(phone){
+            z-index: 1003;
+        }
+    }
+
+    
+    &--primary-color {background-color: $primary-color;}
+    &--quaternary-color {background-color: $quaternary-color;}
+
+}

@@ -1,0 +1,53 @@
+.intro {
+    margin-top:0.5rem;
+    color: $secondary-color;
+    font-weight: 700;
+    z-index: 103;
+    opacity: 0;
+
+    &__text {
+        font-size: 4rem;
+
+        height: 2.5em;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        line-height: 1em;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+
+        @include responsive(tab-land){
+            font-size: 3.5rem
+        }
+        @include responsive(phone){
+            height: 3em;
+            font-size: 2.2rem;
+            -webkit-line-clamp: 2.5;
+        }
+    }
+
+    &__name {
+        color: inherit;
+    }
+
+    &__title {
+        display: block;
+        padding: 0 0.3rem;
+        color: inherit;
+        margin-top: 0.5rem;
+
+        & > span {
+            border-right: 0.4rem solid $secondary-color;
+            animation-name: default-fadeout;
+            animation-duration: 0.6s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+    }
+
+    &--show {
+        animation-name: default-fadein;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+    }
+}

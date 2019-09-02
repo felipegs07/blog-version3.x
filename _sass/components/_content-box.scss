@@ -1,0 +1,87 @@
+.content-box {
+    width: 75%;
+    height: 100%;
+    padding: 1rem;
+    position: relative;
+    float: left;
+    overflow: scroll;
+    overflow-x: hidden;
+    opacity: 0;
+    animation: default-fadein .5s ease-in-out 1s forwards;
+
+    @include responsive(phone){
+        width: 84%;
+    }
+
+
+    &__image {
+
+        @include responsive(tab-port){
+            width: 14rem;
+            margin: 0 auto;
+        }
+        img {
+            width: 14rem;
+            border-radius: 50%;
+            border: 0.5rem solid $primary-color;
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+            padding: 1rem;
+            transition: all 0.5s;
+            filter: grayscale(70%);
+
+            &:hover {
+                border: 0.5rem solid $primary-color;
+                border-right-color: transparent;
+                border-left-color: transparent;
+                filter: grayscale(20%);
+            }
+        }
+    }
+
+    &__text {
+        width: 60%;
+
+        @include responsive(tab-port){
+            width: 90%;
+        }
+        @include responsive(phone){
+            width: 100%;
+        }
+
+        p {
+            line-height: 1.3em;
+        }
+    }
+
+    &__posts {
+        width: 100%;
+        margin-top: 4rem;
+        margin-left: 0.5rem;
+
+        article {
+            margin-bottom: 2rem;
+
+            a {
+                transition: all .2s;
+                &:hover {
+                    color: $tertiary-color;
+                }
+            }
+        }
+
+        span {
+            color: $secondary-color;
+        }
+
+    }
+
+    &__slider {
+        width: 100%;
+    }
+
+    &--home {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-display: auto;
+}
+
+.ola {
+    z-index: 100;
+
+    &__text{
+        font-size: 15rem;
+        font-weight: 700;
+        height: 15rem;
+        margin-left: -0.5rem;
+        
+        @include responsive(phone){
+            font-size: 12rem;
+            height: 12rem;
+        }
+    }
+    &--show {
+        animation-name: ola-fadein-text;
+        animation-duration: 4s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+
+    span {
+        color: $tertiary-color;
+    }
+}
+
+h1 {font-size: 2.4rem; font-weight: 300}
+h2 {font-size: 2rem;font-weight: 300}
+h3 {font-size: 1.8rem;font-weight: 300}
+h4 {font-size: 1.6rem;font-weight: 300}
+h5 {font-size: 1.4rem;font-weight: 300}
+h6 {font-size: 1rem;font-weight: 300}
+
+.font-xl {font-size: 8rem;}
+.font-lg {font-size: 6rem;}
+.font-md {font-size: 4rem;}
+.font-sm {font-size: 3rem;}
+.font-xs {font-size: 2rem;}
+
+p {font-size: 1.5rem}

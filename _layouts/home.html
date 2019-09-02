@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<section class="container container--primary">
+    <section class="container__view">
+        {% include header.html %}
+        {% include nav-black.html %}
+        
+        <section class="content-box content-box--home"></section>
+            
+        <section class="home-text">
+            <article class="ola ola--show">
+                <p class="ola__text">{{ site.home_hello-word }}<span>.</span></p>
+            </article>
+
+            <article class="intro">
+                <p class="intro__text">
+                    {{ site.home_pronoun }} <span class="intro__name">&lt;{{ site.home_first-name }}  &frasl; &gt;</span>{{ site.home_article }}<br>
+                    <span class="intro__title" data-wait="3000" data-words='{{ site.home_titles }}'></span>
+                </p>
+                <article class="intro__button">
+                    <a href="/about" class="btn btn--secondary">{{ site.home_button-text }}</a>
+                </article>
+            </article>
+        </section>
+
+        <section class="color-box color-box--quaternary-color color-box--opening home"></section>
+
+    </section>
+</section>
+
+{% include home-scripts.html %}

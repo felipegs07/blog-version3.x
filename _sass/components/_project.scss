@@ -1,0 +1,90 @@
+.project-item {
+    width: 48%;
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+
+    @include responsive(phone){
+        width: 100%
+    }
+
+    &__image {
+        width: 100%;
+        height: 15rem;
+        object-fit: cover;
+        border-top-left-radius: 0.2rem;
+        border-top-right-radius: 0.2rem;
+        overflow: hidden;  
+    }
+
+    &__lab-thumb {
+        width: 100%;
+        height: 15rem;
+        object-fit: cover;
+        border-top-left-radius: 0.2rem;
+        border-top-right-radius: 0.2rem;
+        overflow: hidden;
+    }
+
+    &__title {
+        margin-top: 1rem;
+        color: $primary-color;
+        text-align: center;
+        width: 100%;
+        height: 2.5em;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+    }
+
+    &__tech {
+        color: $tertiary-color;
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+
+    &__description {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        color: $primary-color;
+        text-align: center;
+        width: 100%;
+        height: 4em;
+        overflow: hidden;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        margin-bottom: .5rem;
+        padding: 0 1rem;
+
+        @include responsive(phone){
+            height: 5em;
+            -webkit-line-clamp: 4;
+        }
+    }
+
+    &__repository {
+        display: block;
+        margin: 1rem auto;
+        width: 2rem;
+    }
+
+    &--active {
+        height: 25rem;
+    }
+
+    &--white {
+        background-color: $quinary-color;
+    }
+
+    &:nth-child(odd){
+        margin-right: 2%;
+    }
+
+}

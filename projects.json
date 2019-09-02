@@ -1,0 +1,52 @@
+{
+    "projects":[
+        {
+            "title": "Trampos das Comunidades",
+            "image": "/assets/img/trampos-das-comunidades.png",
+            "alt": "Logotipo escrito Trampos das Comunidades e ao lado um círculo divido em 4 partes coloridas com um quadrado cinza no meio",
+            "github": "https://github.com/felipegs07/dev-jobs-community",
+            "link": "https://tramposdascomunidades.netlify.com/",
+            "description": "App de vagas de trabalho dos grupos do Github.<br>(React.js, Axios, Moment.js, Materialize.css)"
+        },
+        {
+            "title": "Flowing",
+            "image": "/assets/img/jekyll-logo.png",
+            "alt": "Site com fundo cinza escrito Olá, eu sou Felipe, um desenvolvedor front-end e um botão preto abaixo do texto.",
+            "link": "https://www.felipegs.com",
+            "github": "https://github.com/felipegs07/felipegs07.github.io",
+            "description": "Website pessoal de blog/portfólio.<br>(Jekyll, SCSS, Liquid, Javascript ES6+, Gulp.js)"
+        },
+        {
+            "title": "Dockizy",
+            "image": "/assets/img/dockizy.png",
+            "alt": "Logo do Dockyll, um papel vermelho ao lado das letras capitalizadas com o nome do produto.",
+            "link": "https://www.felipegs.com/dockizy-docs/",
+            "github": "https://github.com/felipegs07/dockizy",
+            "description": "Um tema simples, fácil e rápido para criar documentações.<br>(Hexo, SCSS, Nunjucks, Javascript)"
+        }
+    ],
+    "labs": [
+        {
+            "title": "Ank-site",
+            "color": "linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);",
+            "github": "https://github.com/felipegs07/labs/tree/master/ank-site",
+            "link": "http://www.felipegs.com/labs/ank-site/",
+            "description": "Projeto visual de um novo site/blog pessoal.<br>(HTML5, CSS3)"
+        },
+        {
+            "title": "Slider-site",
+            "color": "linear-gradient(90deg, rgba(173,255,47,1) 0%, rgba(255,160,122,1) 100%);",
+            "github": "https://github.com/felipegs07/labs/tree/master/slider-site",
+            "link": "http://www.felipegs.com/labs/slider-site/",
+            "description": "Projeto de site dividido em camadas, funcionando como um slider.<br>(HTML5, CSS3)"
+        },
+        {
+            "title": "Amazing Chat Layout",
+            "color": "linear-gradient(90deg, rgba(188,112,255,1) 0%, rgba(154,161,215,1) 79%, rgba(151,183,224,1) 100%);",
+            "github": "https://github.com/felipegs07/labs/tree/master/amazing-chat",
+            "link": "https://www.felipegs.com/labs/amazing-chat/",
+            "description": "Projeto de UI para futuro projeto de chat SPA<br>(HTML5, CSS3, SASS, Gulp.js)"
+        }
+
+    ]
+}

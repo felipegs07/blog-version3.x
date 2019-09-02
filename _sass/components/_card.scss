@@ -1,0 +1,22 @@
+.card {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    background-color: $quinary-color;
+    padding-bottom: 2rem;
+
+    &__image {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+    &__text {
+        text-align: center;
+        font-size: 2.5rem;
+        padding: 3rem 5rem 0 5rem;
+    }
+}

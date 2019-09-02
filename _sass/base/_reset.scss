@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; 
+}
+
+html {
+    font-size: 62.5%;
+
+    @include responsive(tab-land){
+        font-size: 56.25%;
+    }
+    @include responsive(tab-port){
+        font-size: 50%;
+    }
+    @include responsive(big-desktop){
+        font-size: 80%;
+    }
+
+}
+
+body {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+::selection {
+    background: $tertiary-color;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $quaternary-color; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $tertiary-color; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $secondary-color; 
+  }

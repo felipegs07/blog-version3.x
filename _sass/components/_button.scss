@@ -1,0 +1,101 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 2px;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+        font-weight: 700;
+    }
+
+    &::after {
+        content: '';
+        border-radius: 2px;
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+
+    &--primary {
+        background-color: $primary-color;
+        color: $quinary-color;
+
+        &::after {
+            background-color: $primary-color;
+        }
+    }
+
+    &--secondary {
+        background-color: $secondary-color;
+        color: $quinary-color;
+
+        &::after {
+            background-color: $secondary-color;
+        }
+    }
+
+    &--quinary {
+        background-color: $quinary-color;
+        color: $primary-color;
+        border: .2rem solid $primary-color;
+
+        // &::after {
+        //     background-color: $quinary-color;
+        // }
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 1rem 2rem rgba($color:$primary-color, $alpha: 0.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color:$primary-color, $alpha: 0.2);
+    }
+
+}
+
+.btn-clean {
+    &,
+    &:link,
+    &:visited {
+        padding: 0.5rem 0.5rem;
+        margin-top: 0.5rem;
+        display: inline-block;
+        border-radius: 2px;
+        transition: all .2s;
+        position: relative;
+        font-weight: 700;
+        font-size: 1.2rem;
+        transition: all .3s;
+
+        &:hover {
+            background-color: $quinary-color;
+        }
+
+        
+    }
+
+    &--primary {
+        background-color: transparent;
+        color: $secondary-color;
+        border: 1px solid $secondary-color;
+    }
+
+}

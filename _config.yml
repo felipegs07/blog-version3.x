@@ -1,0 +1,82 @@
+# Global variables
+title: Felipe G.S | Desenvolvedor Front-end
+email: felipegdas07@gmail.com
+name: Felipe G.S
+job_title: Desenvolvedor Front-End
+
+social:
+  name: Felipe G.S
+  links:
+    - https://twitter.com/felipegsdev
+    - https://github.com/felipegs07
+    - https://www.linkedin.com/in/felipegdasilva/
+
+lang: pt_BR
+google-site-verification: google460580164f1f5077.html
+author: 
+  twitter: felipegsdev
+  card: summary
+  picture: /assets/img/photo.jpg
+description: >-
+  Um blog de Felipe G.S, focado no compartilhamento de conteúdo de desenvolvimento web e front-end. Posts sobre CSS, React, TDD, Jekyll e muito mais...
+
+desc: >-
+  Eu sou um desenvolvedor front-end júnior focado em me desenvolver na criação de Web Apps e sites. 
+  Como programador, estou em busca constante de melhores práticas e conhecimento. Gosto de aprender 
+  coisas novas, me interesso por desenvolvimento de software e tecnologias front-end 
+  (como Javascript, React.js, Design de Interface, TDD).
+
+skills_title: Habilidades
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.felipegs.com/" # the base hostname & protocol for your site, e.g. http://example.com
+linkedin: https://www.linkedin.com/in/felipegdasilva/
+github:  https://github.com/felipegs07
+# Home variables 
+home_titles: '["desenvolvedor front-end.","desenvolvedor web.", "programador júnior.", "apaixonado por CSS.", "desenvolvedor React.js"]'
+#"desenvolvedor React."
+home_hello-word: Olá
+home_button-text: me conheça
+home_pronoun: eu sou
+home_first-name: Felipe
+home_article: ", um"
+# Post variables
+post_by: por
+post_posted: postado em
+post_time-estimated: Tempo estimado de leitura
+
+
+# Build settings
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /assets/img/js-logo.png
+        width: 250
+
+permalink: /:title/
+highlighter: rouge
+markdown: kramdown
+sass:
+    style: compressed
+# Google Analytics
+google_analytics: UA-134641527-1
+
+minify_html: true
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

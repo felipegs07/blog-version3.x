@@ -1,0 +1,47 @@
+header {
+    position: fixed;
+    top: 0;
+    height: 3rem;
+    width: 100%
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+
+    &__social {
+        display: inline-block;
+        position: absolute;
+        transform: translate(-90%, -50%);
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        animation: default-fadein 0.4s ease-in-out 1s forwards;
+
+        a {
+            display: inline;
+            font-size: 1.5rem;
+            color: $primary-color;
+            margin-right: 0.5rem;
+            margin-left: 0.5rem;
+            transition: all 0.5s;
+
+            &:hover {
+                color: $tertiary-color;
+            }
+        }
+
+    }
+
+    &__page {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 1rem;
+        opacity: 0;
+        animation: default-fadein 0.4s ease-in-out 1s forwards;
+    }
+
+}

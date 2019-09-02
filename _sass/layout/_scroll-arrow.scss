@@ -1,0 +1,33 @@
+.scroll-arrow {
+    position: absolute;
+    transform: translateX(-51%);
+    left: 51%;
+    bottom:4rem;
+    z-index: 103;
+    opacity: 0;
+    animation-name: ola-fadein;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    color: $black-color;
+
+    &__text > p {
+        font-size: 1.2rem;
+        font-weight: 700;
+        transform: rotate(90deg);
+        letter-spacing: 0.1rem;
+    }
+
+    &__arrow {
+        position: absolute;
+        transform: translateX(-49%);
+        left: 50%;
+        font-weight: 700;
+        font-size: 2.3rem;
+        animation-name: scroll-arrow;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    }
+}

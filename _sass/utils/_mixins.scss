@@ -1,0 +1,16 @@
+//media query manager
+
+@mixin responsive($breakepoint) {
+   @if $breakepoint == phone {
+       @media only screen and (max-width: 600px) { @content };
+   }
+   @if $breakepoint == tab-port {
+        @media only screen and (max-width: 900px) { @content };
+    }
+    @if $breakepoint == tab-land {
+        @media only screen and (max-width: 1200px) { @content };
+    }
+    @if $breakepoint == big-desktop {
+        @media only screen and (min-width: 1800px) { @content };
+    }
+}

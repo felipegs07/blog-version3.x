@@ -1,0 +1,118 @@
+.post {
+    padding: 2%;
+
+    p {
+        margin-top: 1rem;
+        font-size: 1.6rem;
+        line-height: 1.5em;
+    }
+
+    table {
+        width: 100%;
+        border: 1px solid rgba($primary-color, $alpha: 0.6);
+        font-size: 1.4rem;
+
+
+        thead tr th{
+            background-color: $quaternary-color;
+            text-align: center!important;
+            padding: 0.5rem 0;
+        }
+
+        tbody tr td {
+            text-align:center!important;
+            padding: 0.2rem 0;
+        }
+    }
+
+    a {
+        color: $primary-color;
+        font-weight: bold;
+        text-decoration: underline;
+        transition: all .3s;
+
+        &:hover {
+            background-color: $tertiary-color;
+            text-decoration: none;
+        }
+    } 
+    pre {
+        margin: 1rem 0;
+        padding: 1rem;
+        width: 90%;
+        font-size: 1.8rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+        padding-bottom: 1.5rem;
+        font-weight: bold;
+        line-height: 1em;
+
+    }
+    h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        padding: 1rem 0 0;
+    }
+    h3 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        padding: 0.5rem 0;
+    }
+    h4 {
+        font-size: 2rem;
+        font-weight: bold;
+        padding-top: 1rem; 
+        padding-bottom: 0.5rem;
+    }
+    h5 {
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding-bottom: 0.5rem;
+    }
+    h6 {
+        font-size: 1.4rem;
+        font-weight: bold;
+        padding-bottom: 0.5rem;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    blockquote {
+        border-left: 0.5rem solid $tertiary-color;
+        //margin: 0.5rem 0;
+        color: $secondary-color;
+        //font-weight: 700;
+        font-size: 1.5em;
+        padding-left: 1rem;
+    }
+
+   li {
+       font-size: 1.5rem;
+   }
+
+   ul, ol {
+       padding-left: 2rem;
+   }
+
+   &__info {
+       color: $tertiary-color;
+       //font-weight: bold;
+       margin-left: 0.5rem;
+       margin-bottom: 5rem;
+    
+       a {
+           text-decoration: none;
+       }
+   }
+
+   &__comment {
+       margin-top: 10rem;
+   }
+
+}

@@ -1,0 +1,13 @@
+.home-text{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 53%;
+    display: block;
+    z-index: 1003;
+    width: 100%;
+
+    &--close {
+        animation: ola-fadeout .8s ease-in-out forwards;
+    }
+}

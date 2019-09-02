@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<section class="container">
+    <section class="container__view">
+        {% include header.html %}
+        {% include nav.html %}
+        
+        <section class="content-box">
+            <section class="content-box__slider">
+                <!-- {% for post in site.posts %}
+                    {% if post.online %}
+                        <article class="project-item project-item--white">
+                            <img class="project-item__image" src="{{ post.image.path }}" alt="{{ post.title }}">
+                            <h3 class="font-xs project-item__title">{{ post.title }}</h3>
+                            <h4 class="project-item__tech">#{{ post.tech }}</h4>
+                            <a href="{{ post.url | prepend: base.url }}" class="btn btn--secondary" target="_blank" rel="noopener">ver post</a>
+                        </article>
+                    {% endif %}
+                {% endfor %} -->
+
+                {% for post in site.posts %}
+                    {% if post.online %}
+                        <article class="blog-card">
+                            <h3 class="font-xs blog-card__title">{{ post.title }}</h3>
+                            {{ post.excerpt }}
+                            <section class="blog-card__categories">
+                                {% for category in post.categories %}
+                                    <h4 class="blog-card__category">#{{ category }}</h4>
+                                {% endfor %}
+                            </section>
+                            <a href="{{ post.url | prepend: base.url }}" class="btn btn--secondary" target="_blank" rel="noopener">ler post</a>
+                        </article>
+                    {% endif %}
+                {% endfor %}
+            </section>
+        </section>
+
+        <section class="color-box color-box--primary-color color-box--page"></section>
+    </section>
+
+</section>
+

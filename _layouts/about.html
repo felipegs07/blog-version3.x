@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<section class="container">
+    <section class="container__view">
+        {% include header.html %}
+        {% include nav.html %}
+        
+        <section class="content-box">
+            <section class="content-box__image">
+                <img src="/assets/img/photo.jpg" alt="Foto de um homem barbado">
+            </section>
+            <section class="about">
+                {{ content }}
+            </section>
+        </section>
+        <section class="color-box color-box--primary-color color-box--page"></section>
+    </section>
+</section>
+
